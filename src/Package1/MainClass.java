@@ -8,7 +8,8 @@ public class MainClass {
         Author rPaul = new Author("Radu Paul");
         Titanic.AddAuthor(rPaul);
 
-        Section chpt1 = new Section("Chapter 1");
+        //region Composite Pattern
+        /*Section chpt1 = new Section("Chapter 1");
         Section chpt11 = new Section("Chapter 1.1");
         Section chpt111 = new Section("Chapter 1.1.1");
         Section chpt1111 = new Section("Chapter 1.1.1.1");
@@ -27,7 +28,41 @@ public class MainClass {
 
         chpt1111.AddElement(new Image("Image from subchapter 1.1.1.1"));
 
-        Titanic.Print();
+        Titanic.Print();*/
+        //endregion
+
+        //region Proxy Pattern
+
+        long StartTime = System.currentTimeMillis();
+        ImageProxy img1 = new ImageProxy("Image 1");
+        ImageProxy img2 = new ImageProxy("Image 2");
+        ImageProxy img3 = new ImageProxy("Image 3");
+
+        Section section1 = new Section("Section 1");
+        section1.AddElement(img1);
+
+        Section section2 = new Section("Section 2");
+        section2.AddElement(img2);
+        section2.AddElement(img3);
+
+        Book book1 = new Book("Book 1");
+        book1.AddContent(section1);
+        book1.AddContent(section2);
+        long EndTime = System.currentTimeMillis();
+
+        System.out.println("Creation of the content took " + (EndTime - StartTime) + " miliseconds");
+
+        StartTime = System.currentTimeMillis();
+        section1.print();
+        EndTime = System.currentTimeMillis();
+        System.out.println("Printing of the section 1 took " + (EndTime - StartTime) + " miliseconds");
+
+        StartTime = System.currentTimeMillis();
+        section1.print();
+        EndTime = System.currentTimeMillis();
+        System.out.println("Printing of the section 1 took " + (EndTime - StartTime) + " miliseconds");
+
+        //endregion
 
     }
 

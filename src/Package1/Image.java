@@ -1,5 +1,7 @@
 package Package1;
 
+import java.util.concurrent.TimeUnit;
+
 public class Image implements Element {
     private String _imageName;
 
@@ -13,6 +15,13 @@ public class Image implements Element {
 
     public Image(String imageName){
         _imageName = imageName;
+
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        }catch (Exception ex){
+            System.out.println(ex);
+        }
+
     }
 
     @Override

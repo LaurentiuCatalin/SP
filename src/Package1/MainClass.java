@@ -33,6 +33,7 @@ public class MainClass {
 
         //region Proxy Pattern
 
+        /*
         long StartTime = System.currentTimeMillis();
         ImageProxy img1 = new ImageProxy("Image 1");
         ImageProxy img2 = new ImageProxy("Image 2");
@@ -61,9 +62,29 @@ public class MainClass {
         section1.print();
         EndTime = System.currentTimeMillis();
         System.out.println("Printing of the section 1 took " + (EndTime - StartTime) + " miliseconds");
-
+        */
         //endregion
 
+        //region Strategy Pattern
+
+        Section cap1 = new Section("Capitol 1");
+        Paragraph p1 = new Paragraph("Paragraph 1");
+        cap1.AddElement(p1);
+        Paragraph p2 = new Paragraph("Paragraph 2");
+        cap1.AddElement(p2);
+        Paragraph p3 = new Paragraph("Paragraph 3");
+        cap1.AddElement(p3);
+
+        System.out.println("Printare fara align: ");
+        cap1.print();
+
+        System.out.println("Printare cu align: ");
+        p1.SetStrategy(new AlignLeft());
+        p2.SetStrategy(new AlignCenter());
+        p3.SetStrategy(new AlignRight());
+        cap1.print();
+
+        //endregion
     }
 
 }

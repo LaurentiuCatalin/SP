@@ -2,6 +2,7 @@ package Package1;
 
 public class Paragraph implements Element {
     private String _paragraphName;
+    private AlignStrategy _strategy;
 
     public String get_paragraphName() {
         return _paragraphName;
@@ -17,6 +18,15 @@ public class Paragraph implements Element {
 
     @Override
     public void print() {
-        System.out.println("Table name: "+get_paragraphName());
+        System.out.println("Paragraph name: "+get_paragraphName());
+        if(_strategy == null){
+            System.out.println(_paragraphName);
+        }else{
+            _strategy.Print(_paragraphName);
+        }
+    }
+
+    public void SetStrategy(AlignStrategy Strategy){
+        _strategy = Strategy;
     }
 }

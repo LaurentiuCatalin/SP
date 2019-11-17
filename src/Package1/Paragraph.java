@@ -29,4 +29,9 @@ public class Paragraph implements Element {
     public void SetStrategy(AlignStrategy Strategy){
         _strategy = Strategy;
     }
+
+    @Override
+    public void Accept(BookStatistics bookStatistics) {
+        bookStatistics.Visit(this);
+    }
 }

@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="207d8a4e-2e88-4761-be1f-f0cc0fdcd86b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/src.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Package1/ImageProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Package1/BookStatistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Package1/Visitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Element.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Image.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/ImageProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/ImageProxy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Paragraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Paragraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Section.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Section.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Table.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Element.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Package1/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/ImageProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/ImageProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Package1/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/Paragraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Paragraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Section.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Table.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,10 +92,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Package1/MainClass.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

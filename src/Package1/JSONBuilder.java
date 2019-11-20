@@ -12,6 +12,8 @@ import java.util.HashMap;
 public class JSONBuilder implements Builder {
 
     public Element document;
+
+    //Acest path reprezinta locatia lui book.json... In cazul meu este cea de mai jos.
     public final String bookJSONPath = "C:\\Others\\Intellij\\LabDpJava\\src\\book.json";
 
     @Override

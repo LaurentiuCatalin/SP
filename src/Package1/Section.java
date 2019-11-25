@@ -52,7 +52,7 @@ public class Section implements Element {
     }
 
     @Override
-    public void Accept(BookStatistics bookStatistics) {
+    public void Accept(Visitor bookStatistics) {
         for(Element element:content){
             element.Accept(bookStatistics);
         }

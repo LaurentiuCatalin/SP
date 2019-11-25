@@ -47,11 +47,18 @@ public class Book {
         this._content = _content;
     }
 
+
+    public void Accept(Visitor visitor){
+        for(Element element:_content){
+            element.Accept(visitor);
+        }
+    }
+
+
     public void Print()
     {
-
         System.out.println("Book Title: "+_title);
-        System.out.println("Author: "+_bookAuthor.get_authorName());
+        //System.out.println("Author: "+_bookAuthor.get_authorName());
 
         for (var element:_content)
         {

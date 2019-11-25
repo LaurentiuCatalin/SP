@@ -14,8 +14,7 @@ public class JSONBuilder implements Builder {
     public Element document;
 
     //Acest path reprezinta locatia lui book.json... In cazul meu este cea de mai jos.
-    public final String bookJSONPath = "C:\\Others\\Intellij\\LabDpJava\\src\\book.json";
-
+    public final String bookJSONPath = "C:\\Others\\DP\\LabDpJava\\src\\book.json";
     @Override
     public Element GetResult() {
         return document;

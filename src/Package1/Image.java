@@ -30,7 +30,8 @@ public class Image implements Element {
     }
 
     @Override
-    public void Accept(BookStatistics bookStatistics) {
-        bookStatistics.Visit(this);
+    public void Accept(Visitor visitor) {
+        visitor.Visit(this);
     }
+
 }

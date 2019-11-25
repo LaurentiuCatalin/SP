@@ -2,18 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="207d8a4e-2e88-4761-be1f-f0cc0fdcd86b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/common_lang3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/common-lang3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-annotations-2.8.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-core-2.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-databind-2.8.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Package1/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Package1/JSONBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/book.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Package1/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Package1/DocumentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Package1/OpenCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Package1/StatisticsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/common_lang3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/common_lang3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DPLab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DPLab1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Element.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Image.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/ImageProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/ImageProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/JSONBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/JSONBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Paragraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Paragraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Section.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Section.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Table.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Element.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/ImageProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/ImageProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/JSONBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/JSONBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Package1/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/Paragraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Paragraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Section.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Table.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +47,7 @@
   <component name="ProjectId" id="1RsUS1O2TfHclgEdcyyv8jo9UJm" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jackson-databind-2.8.4.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../common-lang3.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -102,16 +114,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Package1/MainClass.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

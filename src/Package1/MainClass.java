@@ -2,7 +2,7 @@ package Package1;
 
 public class MainClass {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Book Titanic = new Book("Titanic");
         Author rPaul = new Author("Radu Paul");
@@ -110,10 +110,21 @@ public class MainClass {
 
         //region Builder Pattern
 
+        /*
         Builder jsonBuilder = new JSONBuilder();
         jsonBuilder.Build();
         Element myBook = jsonBuilder.GetResult();
         myBook.print();
+        */
+        //endregion
+
+        //region Singleton
+
+        Command cmd1 = new OpenCommand("C:\\Others\\DP\\LabDpJava\\src\\book.json");
+        cmd1.Execute();
+        Command cmd2 = new StatisticsCommand();
+        cmd2.Execute();
+        DocumentManager.GetInstance().GetBook().Print();
 
         //endregion
 

@@ -2,26 +2,28 @@ package Package1;
 
 import java.util.ArrayList;
 
-public class Section implements Element {
+public class Section implements IElement, IObservable {
 
     private String _sectionTitle;
-    public ArrayList<Element> content;
+    public ArrayList<IElement> content;
+    private ArrayList<IObserver> _observerList;
 
     public Section(String title){
         this._sectionTitle = title;
-        content = new ArrayList<Element>();
+        content = new ArrayList<IElement>();
+        _observerList = new ArrayList<IObserver>();
     }
 
-    public int AddElement(Element element){
-        content.add(element);
-        return content.indexOf(element);
+    public int AddElement(IElement IElement){
+        content.add(IElement);
+        return content.indexOf(IElement);
     }
 
-    public void RemoveElement(Element element){
-        content.remove(element);
+    public void RemoveElement(IElement IElement){
+        content.remove(IElement);
     }
 
-    public Element GetElement(int indexOfElement){
+    public IElement GetElement(int indexOfElement){
         return content.get(indexOfElement);
     }
 
@@ -33,11 +35,11 @@ public class Section implements Element {
         this._sectionTitle = _sectionTitle;
     }
 
-    public ArrayList<Element> getContent() {
+    public ArrayList<IElement> getContent() {
         return content;
     }
 
-    public void setContent(ArrayList<Element> content) {
+    public void setContent(ArrayList<IElement> content) {
         this.content = content;
     }
 
@@ -52,9 +54,30 @@ public class Section implements Element {
     }
 
     @Override
-    public void Accept(Visitor bookStatistics) {
-        for(Element element:content){
-            element.Accept(bookStatistics);
+    public void Accept(IVisitor bookStatistics) {
+        for(IElement IElement :content){
+            IElement.Accept(bookStatistics);
         }
+    }
+
+    @Override
+    public void SetNewValue(String newValue) {
+        // ?
+    }
+
+    @Override
+    public void AddObserver(IObserver observer) {
+        _observerList.add(observer);
+    }
+
+    @Override
+    public void RemoveObserver(IObserver observer) {
+        _observerList.remove(observer);
+    }
+
+    @Override
+    public void NotifyAllObservers() {
+        //?
+        System.out.println("Observers notified.");
     }
 }

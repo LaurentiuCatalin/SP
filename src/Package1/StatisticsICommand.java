@@ -1,6 +1,6 @@
 package Package1;
 
-public class StatisticsCommand implements Command {
+public class StatisticsICommand implements ICommand {
     @Override
     public void Execute() {
         BookStatistics statistics = new BookStatistics();

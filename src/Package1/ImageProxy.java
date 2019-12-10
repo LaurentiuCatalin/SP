@@ -1,6 +1,6 @@
 package Package1;
 
-public class ImageProxy implements Element {
+public class ImageProxy implements IElement {
 
     private String _imageName;
     private Image _realImage;
@@ -33,7 +33,12 @@ public class ImageProxy implements Element {
     }
 
     @Override
-    public void Accept(Visitor visitor) {
-        visitor.Visit(this);
+    public void Accept(IVisitor IVisitor) {
+        IVisitor.Visit(this);
+    }
+
+    @Override
+    public void SetNewValue(String newValue) {
+        _realImage.SetNewValue(newValue);
     }
 }

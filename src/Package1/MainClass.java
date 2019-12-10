@@ -119,13 +119,44 @@ public class MainClass {
         //endregion
 
         //region Singleton
-
-        Command cmd1 = new OpenCommand("C:\\Others\\DP\\LabDpJava\\src\\book.json");
+        /*
+        ICommand cmd1 = new OpenICommand("C:\\Others\\DP\\LabDpJava\\src\\book.json");
         cmd1.Execute();
-        Command cmd2 = new StatisticsCommand();
+        ICommand cmd2 = new StatisticsICommand();
         cmd2.Execute();
         DocumentManager.GetInstance().GetBook().Print();
+        */
+        //endregion
 
+        //region Observer/Lab9
+
+        Section cap1 = new Section("Capitolul 1");
+        Paragraph p1 = new Paragraph("Paragraph 1");
+        cap1.AddElement(p1);
+        Paragraph p2 = new Paragraph("Paragraph 2");
+        cap1.AddElement(p2);
+        Paragraph p3 = new Paragraph("Paragraph 3");
+        cap1.AddElement(p3);
+        Paragraph p4 = new Paragraph("Paragraph 4");
+        cap1.AddElement(p4);
+        cap1.AddElement(new ImageProxy("ImageOne"));
+        cap1.AddElement(new Image("ImageTwo"));
+        cap1.AddElement(new Paragraph("Some text"));
+        cap1.AddElement(new Table("Table 1"));
+        FirstObserver firstObserver = new FirstObserver();
+        SecondObserver secondObserver = new SecondObserver();
+        cap1.AddObserver(firstObserver);
+        cap1.AddObserver(secondObserver);
+        p1.AddObserver(firstObserver);
+        p1.AddObserver(secondObserver);
+        p2.AddObserver(firstObserver);
+        cap1.SetNewValue("CHAPTER 1");
+        p1.SetNewValue("PARAGRAPH 2");
+        p2.SetNewValue("PARAGRAPH 3");
+        cap1.RemoveObserver(firstObserver);
+        cap1.SetNewValue("CHAPTER 1.1");
+
+        cap1.print();
         //endregion
 
     }

@@ -1,8 +1,13 @@
 package Package1;
 
-public class Paragraph implements Element {
+import java.util.ArrayList;
+
+public class Paragraph implements IElement, IObservable {
     private String _paragraphName;
-    private AlignStrategy _strategy;
+    private IAlignStrategy _strategy;
+    private String _value;
+    private String _oldValue;
+    private ArrayList<IObserver> _observerList;
 
     public String get_paragraphName() {
         return _paragraphName;
@@ -14,6 +19,7 @@ public class Paragraph implements Element {
 
     public Paragraph(String paragraphName){
         _paragraphName = paragraphName;
+        _observerList = new ArrayList<IObserver>();
     }
 
     @Override
@@ -26,12 +32,34 @@ public class Paragraph implements Element {
         }
     }
 
-    public void SetStrategy(AlignStrategy Strategy){
+    public void SetStrategy(IAlignStrategy Strategy){
         _strategy = Strategy;
     }
 
     @Override
-    public void Accept(Visitor visitor) {
-        visitor.Visit(this);
+    public void Accept(IVisitor IVisitor) {
+        IVisitor.Visit(this);
+    }
+
+    @Override
+    public void SetNewValue(String newValue) {
+        this._oldValue = _value;
+        this._value = newValue;
+    }
+
+    @Override
+    public void AddObserver(IObserver observer) {
+        _observerList.add(observer);
+    }
+
+    @Override
+    public void RemoveObserver(IObserver observer) {
+        _observerList.remove(observer);
+    }
+
+    @Override
+    public void NotifyAllObservers() {
+        // ?
+        System.out.println("Observers notified.");
     }
 }

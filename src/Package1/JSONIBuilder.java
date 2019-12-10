@@ -9,14 +9,14 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.HashMap;
 
-public class JSONBuilder implements Builder {
+public class JSONIBuilder implements IBuilder {
 
-    public Element document;
+    public IElement document;
 
     //Acest path reprezinta locatia lui book.json... In cazul meu este cea de mai jos.
     public final String bookJSONPath = "C:\\Others\\DP\\LabDpJava\\src\\book.json";
     @Override
-    public Element GetResult() {
+    public IElement GetResult() {
         return document;
     }
 
@@ -37,12 +37,12 @@ public class JSONBuilder implements Builder {
     }
 
     @Override
-    public Element BuildSection(HashMap<String, Object> map) {
+    public IElement BuildSection(HashMap<String, Object> map) {
         Section section = new Section((String)map.get("title"));
         Collection<HashMap<String, Object>> children = (Collection)map.get("children");
         children.forEach((childMap) -> {
 
-            Element e = this.processMap(childMap);
+            IElement e = this.processMap(childMap);
             if (e != null) {
                 try {
                     section.AddElement(e);
@@ -55,26 +55,26 @@ public class JSONBuilder implements Builder {
     }
 
     @Override
-    public Element BuildParagraph(HashMap<String, Object> map) {
+    public IElement BuildParagraph(HashMap<String, Object> map) {
         return new Paragraph((String)map.get("text"));
     }
 
     @Override
-    public Element BuildImage(HashMap<String, Object> map) {
+    public IElement BuildImage(HashMap<String, Object> map) {
         return new Image((String)map.get("url"));
     }
 
     @Override
-    public Element BuildImageProxy(HashMap<String, Object> map) {
+    public IElement BuildImageProxy(HashMap<String, Object> map) {
         return new ImageProxy((String)map.get("url"));
     }
 
     @Override
-    public Element BuildTable(HashMap<String, Object> map) {
+    public IElement BuildTable(HashMap<String, Object> map) {
         return new Table((String)map.get("text"));
     }
 
-    private Element processMap(HashMap<String, Object> map) {
+    private IElement processMap(HashMap<String, Object> map) {
         String classElement = (String)map.get("class");
 
         if("Section".equals(classElement))

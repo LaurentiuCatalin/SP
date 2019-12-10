@@ -1,15 +1,14 @@
 <component name="libraryTable">
   <library name="common-lang3">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../jackson-databind-2.8.4.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../jackson-core-2.8.1.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../jackson-annotations-2.8.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../common-lang3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customLibraries/jackson-annotations-2.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customLibraries/common-lang3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customLibraries/jackson-core-2.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customLibraries/jackson-databind-2.8.4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/lib/common-lang3.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../common-lang3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/customLibraries/common-lang3.jar!/" />
     </SOURCES>
   </library>
 </component>

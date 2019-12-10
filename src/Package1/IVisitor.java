@@ -1,6 +1,6 @@
 package Package1;
 
-public interface Visitor {
+public interface IVisitor {
     void Visit(Image image);
     void Visit(ImageProxy imageProxy);
     void Visit(Paragraph paragraph);

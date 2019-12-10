@@ -1,26 +1,25 @@
 package Package1;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Book {
 
     private String _title;
     private Author _bookAuthor;
-    private ArrayList<Element> _content;
+    private ArrayList<IElement> _content;
 
     public Book(String Title) {
         this._title = Title;
-        _content = new ArrayList<Element>();
+        _content = new ArrayList<IElement>();
     }
 
     public void AddAuthor(Author author) {
         _bookAuthor = author;
     }
 
-    public void AddContent(Element element)
+    public void AddContent(IElement IElement)
     {
-        _content.add(element);
+        _content.add(IElement);
     }
 
     public String get_title() {
@@ -39,18 +38,18 @@ public class Book {
         this._bookAuthor = _bookAuthor;
     }
 
-    public ArrayList<Element> get_content() {
+    public ArrayList<IElement> get_content() {
         return _content;
     }
 
-    public void set_content(ArrayList<Element> _content) {
+    public void set_content(ArrayList<IElement> _content) {
         this._content = _content;
     }
 
 
-    public void Accept(Visitor visitor){
-        for(Element element:_content){
-            element.Accept(visitor);
+    public void Accept(IVisitor IVisitor){
+        for(IElement IElement :_content){
+            IElement.Accept(IVisitor);
         }
     }
 

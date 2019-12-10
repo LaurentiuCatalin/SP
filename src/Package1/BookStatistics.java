@@ -1,6 +1,6 @@
 package Package1;
 
-public class BookStatistics implements Visitor {
+public class BookStatistics implements IVisitor {
 
     private int _numberOfImage=0;
     private int _numberOfImageProxy=0;

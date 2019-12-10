@@ -1,6 +1,6 @@
 package Package1;
 
-public interface AlignStrategy {
+public interface IAlignStrategy {
 
     abstract void Print(String text);
 

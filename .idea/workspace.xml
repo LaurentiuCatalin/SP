@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="207d8a4e-2e88-4761-be1f-f0cc0fdcd86b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Package1/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Package1/DocumentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Package1/OpenCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Package1/StatisticsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/common_lang3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/common_lang3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Element.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Image.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/ImageProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/ImageProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/JSONBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/JSONBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/MainClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Paragraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Paragraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Section.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Section.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DPLab1/Package1/Table.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Element.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/ImageProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/ImageProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/JSONBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/JSONBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/MainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/Paragraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Paragraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Section.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Table.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

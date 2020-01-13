@@ -7,6 +7,11 @@ public class OpenICommand implements ICommand {
         this._pathToJSON = path;
     }
 
+
+    public void Unexecute(){
+        // de implementat
+    }
+
     @Override
     public void Execute() {
         JSONIBuilder builder = new JSONIBuilder();

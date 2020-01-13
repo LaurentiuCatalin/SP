@@ -53,6 +53,14 @@ public class Section implements IElement, IObservable {
         }
     }
 
+    public void removeLast() {
+        content.remove(content.size()-1);
+    }
+
+    public void deleteLastElement() {
+        content.remove(content.size()-1);
+    }
+
     @Override
     public void Accept(IVisitor bookStatistics) {
         for(IElement IElement :content){

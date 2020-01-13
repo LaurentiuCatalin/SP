@@ -129,7 +129,7 @@ public class MainClass {
         //endregion
 
         //region Observer/Lab9
-
+        /*
         Section cap1 = new Section("Capitolul 1");
         Paragraph p1 = new Paragraph("Paragraph 1");
         cap1.AddElement(p1);
@@ -157,6 +157,36 @@ public class MainClass {
         cap1.SetNewValue("CHAPTER 1.1");
 
         cap1.print();
+        */
+        //endregion
+
+        //region Lab10 Memento
+        /*
+        Section cap1 = new Section("Capitolul 1");
+        cap1.AddElement(new Paragraph("One"));
+        cap1.AddElement(new Paragraph("Another One"));
+        cap1.AddElement(new Paragraph("Another one"));
+        cap1.AddElement(new Paragraph("Another oNe"));
+        DocumentManager.GetInstance().SetBook(cap1);
+        System.out.println("Book Content: ");
+        DocumentManager.GetInstance().SetBook(Titanic).print();
+
+        DeleteCommand dc = new DeleteCommand();
+        dc.Execute();
+        System.out.println("After the first delete: ");
+        DocumentManager.GetInstance().GetBook().print();
+        new DeleteCommand().Execute();
+        System.out.println("After the second delete: ");
+        DocumentManager.GetInstance().GetBook().print();
+
+        ICommand undoCommand = new UndoCommand();
+        undoCommand.Execute();
+        System.out.println("After first undo: ");
+        DocumentManager.GetInstance().GetBook().print();
+        undoCommand.Execute();
+        System.out.println("After second undo: ");
+        DocumentManager.GetInstance().GetBook().print();
+        */
         //endregion
 
     }

@@ -2,32 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="207d8a4e-2e88-4761-be1f-f0cc0fdcd86b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Package1/FirstObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Package1/IObservable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Package1/IObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Package1/SecondObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/common_lang3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/common_lang3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Package1/DeleteCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Package1/Memento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Package1/SaveCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Package1/UndoCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/AlignCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/IAlignCenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/AlignLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/IAlignLeft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/AlignRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/IAlignRight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/AlignStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/IAlignStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/BookStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/BookStatistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/IBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/ICommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/IElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/ImageProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/ImageProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/JSONBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/JSONIBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/DocumentManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/ICommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/OpenICommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/Section.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DPLab1/Package1/StatisticsICommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/DocumentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/DocumentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/ICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/ICommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Package1/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/MainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/OpenCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/OpenICommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/Paragraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Paragraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/OpenICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/OpenICommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Package1/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Section.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/StatisticsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/StatisticsICommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Package1/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/IVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Package1/StatisticsICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Package1/StatisticsCommand.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +40,7 @@
   <component name="ProjectId" id="1RsUS1O2TfHclgEdcyyv8jo9UJm" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/customLibraries/jackson-databind-2.8.4.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
